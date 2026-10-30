@@ -2,6 +2,11 @@
 /* PORTFOLIO V5 - TRAN VIET ANH
    Nang cap tu CSS cu theo yeu cau Lab 5
 */
+:root {
+  --accent: #db2777;
+  --accent-dark: #be185d;
+}
+
 *,
 *::before,
 *::after {
@@ -32,18 +37,18 @@ h3 {
 
 h2 {
   font-size: 1.875rem;
-  color: #12457a;
+  color: var(--accent-dark);
 }
 
 a {
-  color: #12457a;
+  color: var(--accent-dark);
 }
 
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 0.1875rem solid #e8a33d;
+  outline: 0.1875rem solid var(--accent);
   outline-offset: 0.1875rem;
 }
 
@@ -59,11 +64,11 @@ textarea:focus-visible {
 }
 
 .section-alt {
-  background: #e6edf3;
+  background: rgba(219, 39, 119, 0.08);
 }
 
 .site-header {
-  background: #12457a;
+  background: var(--accent);
   padding: 1rem 0;
 }
 
@@ -103,7 +108,7 @@ textarea:focus-visible {
 }
 
 .menu a:hover {
-  background-color: #28639b;
+  background-color: var(--accent-dark);
   text-decoration: underline;
 }
 
@@ -132,15 +137,15 @@ textarea:focus-visible {
 
 .hero h1 {
   font-size: 3.5rem;
-  color: #12457a;
+  color: var(--accent-dark);
 }
 
 .button {
   display: inline-block;
   margin-top: 0.5rem;
   padding: 0.75rem 1.75rem;
-  background: #e8a33d;
-  color: #1d2733;
+  background: var(--accent);
+  color: #ffffff;
   font: inherit;
   font-weight: 700;
   text-decoration: none;
@@ -152,8 +157,8 @@ textarea:focus-visible {
 }
 
 .button:hover {
-  background: #f4ba63;
-  color: #1d2733;
+  background: var(--accent-dark);
+  color: #ffffff;
 }
 
 .button:active {
@@ -190,7 +195,7 @@ textarea:focus-visible {
   background: #ffffff;
   padding: 1.25rem;
   border-radius: 0.5rem;
-  border-top: 0.25rem solid #e8a33d;
+  border-top: 0.25rem solid var(--accent);
   transition: transform 180ms ease,
               box-shadow 180ms ease;
 }
@@ -231,7 +236,7 @@ textarea:focus-visible {
 }
 
 .study th {
-  background: #12457a;
+  background: var(--accent);
   color: #ffffff;
 }
 
@@ -253,7 +258,7 @@ textarea:focus-visible {
 }
 
 .contact-form h3 {
-  color: #12457a;
+  color: var(--accent-dark);
 }
 
 .form-group {
@@ -285,8 +290,8 @@ textarea:focus-visible {
 
 .form-group input:focus-visible,
 .form-group textarea:focus-visible {
-  border-color: #12457a;
-  outline: 0.1875rem solid #e8a33d;
+  border-color: var(--accent);
+  outline: 0.1875rem solid var(--accent);
   outline-offset: 0.1875rem;
 }
 
